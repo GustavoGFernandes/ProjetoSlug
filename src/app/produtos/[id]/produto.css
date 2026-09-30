@@ -1,0 +1,101 @@
+.container-detalhes {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .btn-voltar {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .btn-voltar:hover {
+    text-decoration: underline;
+  }
+  
+  .card-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagem-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f3f4f6;
+  }
+  
+  .info-container h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #1f2937;
+  }
+  
+  .marca, .categoria {
+    color: #6b7280;
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .descricao {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    color: #4b5563;
+  }
+  
+  .precos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .preco {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #16a34a;
+  }
+  
+  .desconto {
+    background: red;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  
+  .especificacoes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+  }
+  
+  .especificacoes li {
+    padding: 0.5rem 0;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-detalhes {
+      grid-template-columns: 1fr;
+    }
+  }
